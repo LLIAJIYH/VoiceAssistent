@@ -16,6 +16,6 @@ def say(what):
     speak.Speak(what)
 
 
-say("Что мне произнести?")
-i = input("Что мне произнести? ")
+say("What do you want me to spell?")
+i = input("What do you want me to spell? ")
 say(i)
