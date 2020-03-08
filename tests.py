@@ -9,8 +9,13 @@ speak_engine = pyttsx3.init()
 voices = speak_engine.getProperty('voices')
 speak_engine.setProperty('voice', voices[2].id)
 voice = "str"
-speak = wincl.Dispatch("SAPI.SpVoice")
-i = input("Что мне произнести? ")
-speak.Speak("Что мне произнести?")
-speak.Speak(i)
 
+
+def say(what):
+    speak = wincl.Dispatch("SAPI.SpVoice")
+    speak.Speak(what)
+
+
+say("Что мне произнести?")
+i = input("Что мне произнести? ")
+say(i)
