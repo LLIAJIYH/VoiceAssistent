@@ -20,7 +20,13 @@ def say(what):
     speak.Speak(what)
 
 
+<<<<<<< HEAD
 def start():
     say("Что мне произнести?")
     i = input("Что мне произнести? ")
     say(i)
+=======
+say("What do you want me to say?")
+i = input("What do you want me to say? ")
+say(i)
+>>>>>>> 182acc23088d73278ab98c5208d7e7484b94512a
